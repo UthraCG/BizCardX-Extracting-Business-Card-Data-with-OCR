@@ -1,50 +1,59 @@
 Aim:
 
-developing a Streamlit application that allows users to upload an image of a business card and extract relevant information from it using easyOCR.
-The extracted information should include the company name, card holder name, designation, mobile number, email address, website URL, area, city, state,
-and pin code. The extracted information should then be displayed in the application's graphical user interface (GUI).
+The objective is to address a hypothetical business problem for a Flipkart 
+Authorized Seller. According to the problem the individual is looking to sell 
+mobile phones on Flipkart. For this, the individual is looking for the best 
+product, brand, specification and deals that can generate the most revenue with 
+the least amount of investment and budget constraints.
 
 Process:
 
-1. Install the required packages: You will need to install Python, Streamlit,
-easyOCR, and a database management system like SQLite or MySQL.
-2. Design the user interface: Create a simple and intuitive user interface using
-Streamlit that guides users through the process of uploading the business
-card image and extracting its information. You can use widgets like file
-uploader, buttons, and text boxes to make the interface more interactive.
+About data set:
 
-3. Implement the image processing and OCR: Use easyOCR to extract the
-relevant information from the uploaded business card image. You can use
-image processing techniques like resizing, cropping, and thresholding to
-enhance the image quality before passing it to the OCR engine.
-4. Display the extracted information: Once the information has been extracted,
-display it in a clean and organized manner in the Streamlit GUI. You can use
-widgets like tables, text boxes, and labels to present the information.
-5. Implement database integration: Use a database management system like
-SQLite or MySQL to store the extracted information along with the uploaded
-business card image. You can use SQL queries to create tables, insert data,
-and retrieve data from the database, Update the data and Allow the user to
-delete the data through the streamlit UI
-6. Test the application: Test the application thoroughly to ensure that it works as
-expected. You can run the application on your local machine by running the
-command streamlit run app.py in the terminal, where app.py is the name of
-your Streamlit application file.
-7. Improve the application: Continuously improve the application by adding new
-features, optimizing the code, and fixing bugs. You can also add user
-authentication and authorization to make the application more secure.
+The dataset includes data on mobile phones from the top five most popular 
+brands in India: Apple, Poco, Realme, Samsung, and Xiaomi. Information like 
+RAM, ROM, Display Size. etc are present which distinguishes one product from 
+another. At least one attribute distinguishes each product. Dataset has no null 
+value.
+Columns: There are 16 columns each having a title which is self-explanatory.
+Rows: There are 430 rows each having a mobile with at least a distinct feature.
+DESCRIPTION OF ATTRIBUTES
+I. brand: Brand Name (Categorical)
+II. model: Model Name (Categorical)
+III. base_color: Phone Color (Categorical)
+IV. processor: Processor brand used (Categorical)
+V. screen_size: Categorical screen size (Categorical)
+VI. ROM: ROM in gigabyte (Numeric – Discrete)
+VII. RAM: RAM in gigabyte (Numeric – Discrete)
+VIII. display_size: Actual display size in inches (Numeric – Continuous)
+IX. num_rear_camera: No. of cameras on back (Numeric – Discrete)
+X. num_front_camera: No. of cameras on front (Numeric – Discrete)
+XI. battery_size: Battery in mAH (Numeric – Continuous)
+XII. ratings: Customer rating for the product (Numeric – Continuous)
+XIII. num_of_ratings: No. of people rating the product, also the equivalent 
+no. of unit sold for our problem (Numeric – Continuous)
+XIV. sales_price: Selling price of the unit after discount (Numeric –
+Continuous)
+XV. discount_percent: Discount in percentage offered (Numeric –
+Continuous)
+XVI. sales: Sales of product in crore rupees (Numeric – Continuous)
 
-Results:
+EDA Process:
 
-The result of the project would be a Streamlit application that allows users to upload
-an image of a business card and extract relevant information from it using easyOCR.
-The extracted information would include the company name, card holder name,
-designation, mobile number, email address, website URL, area, city, state, and pin
-code. The extracted information would then be displayed in the application's
-graphical user interface (GUI). The application would also allow users to save the extracted information into a
-database along with the uploaded business card image. The database would be able
-to store multiple entries, each with its own business card image and extracted
-information. The final application would have a simple and intuitive user interface that guides
-users through the process of uploading the business card image and extracting its
-information. The extracted information would be displayed in a clean and organized
-manner, and users would be able to easily add it to the database with the click of a
-button.
+EDA is one of the most important phases in data science since it helps us to 
+obtain critical insights and statistical metrics. In general, EDA can be categorised 
+in two ways.
+The first distinction is that each method is either non-graphical or graphical.
+Second, each method is univariate or multivariate in nature (usually just 
+bivariate).
+Non-graphical approaches typically include the computation of summary 
+statistics, but graphical methods clearly summarize the data in a diagrammatic 
+or pictorial manner.
+Let's look at each type individually. 
+
+Result:
+
+People are ready to order the mobiles like topend and middle level.
+in high end model mobiles like iphone and samsung with 128 GB RAM. mostly chosen color is black.
+
+people of budget 20k is going for mostly realme. but company can focus on poco. which is growing fast with good dimensions, rom, ram,discount and price.

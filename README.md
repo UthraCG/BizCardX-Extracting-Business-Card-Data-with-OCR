@@ -4,7 +4,7 @@ The objective is to address a hypothetical business problem for a Flipkart
 Authorized Seller. According to the problem the individual is looking to sell 
 mobile phones on Flipkart. For this, the individual is looking for the best 
 product, brand, specification and deals that can generate the most revenue with 
-the least amount of investment and budget constraints.
+the least amount of investment and budget constraint.
 
 Process:
 
